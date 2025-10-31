@@ -1,0 +1,106 @@
+/*
+ * --------------------------------
+ * ESTILOS GERAIS PARA LINKS (<a>)
+ * --------------------------------
+ */
+a {
+    /* Remove o sublinhado padrão */
+    text-decoration: none;
+    /* Define uma cor base discreta (ex: azul marinho) */
+    color: #0056b3; 
+    /* Adiciona uma transição básica */
+    transition: color 0.2s;
+}
+
+/* Efeito ao passar o mouse ou focar no link */
+a:hover,
+a:focus {
+    /* Mudar a cor no hover */
+    color: #ff6f61; /* Cor de destaque (ex: um tom de rosa/laranja) */
+    /* Adiciona sublinhado no hover */
+    text-decoration: underline; 
+}
+
+
+/*
+ * --------------------------------
+ * ESTILOS ESPECÍFICOS: LINKS DO MENU DE NAVEGAÇÃO
+ * --------------------------------
+ */
+header nav ul li a {
+    /* Cor do texto do menu */
+    color: #343a40; 
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento para clique */
+}
+
+/* Remove o sublinhado ao interagir com o menu (opcional: mantém mais limpo) */
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #ff6f61; /* Destaca a cor do texto */
+    text-decoration: none;
+}
+
+
+/*
+ * --------------------------------
+ * ESTILOS ESPECÍFICOS: BOTÕES DE AÇÃO (Links com classes)
+ * --------------------------------
+ */
+
+/* Estilo Base para todos os "botões" */
+.botao-doar,
+.botao-adotar,
+.botao-voluntariar {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.2s, opacity 0.2s;
+    color: white !important; /* Garante que o texto seja branco nos botões */
+    text-decoration: none !important; /* Remove sublinhado nos botões */
+}
+
+/* Estilo para o Botão "Doar" */
+.botao-doar {
+    background-color: #28a745; /* Verde */
+}
+
+/* Estilo para o Botão "Adotar" */
+.botao-adotar {
+    background-color: #ffc107; /* Amarelo */
+    color: #343a40 !important; /* Garante texto escuro para contraste */
+}
+
+/* Estilo para o Botão "Voluntário" */
+.botao-voluntariar {
+    background-color: #17a2b8; /* Ciano */
+}
+
+/* Efeito ao passar o mouse em qualquer botão */
+.botao-doar:hover,
+.botao-adotar:hover,
+.botao-voluntariar:hover,
+.botao-doar:focus,
+.botao-adotar:focus,
+.botao-voluntariar:focus {
+    opacity: 0.85; /* Escurece/clareia o botão levemente */
+}
+
+
+/*
+ * --------------------------------
+ * ESTILOS ESPECÍFICOS: LINKS DO FOOTER
+ * --------------------------------
+ */
+footer address a {
+    color: #ffffff; /* Cor branca (assumindo footer escuro) */
+    text-decoration: underline; /* Mantém sublinhado para clareza (contato) */
+}
+
+footer address a:hover,
+footer address a:focus {
+    color: #ff6f61;
+}
