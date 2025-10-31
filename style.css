@@ -4,11 +4,8 @@
  * --------------------------------
  */
 a {
-    /* Remove o sublinhado padrão */
     text-decoration: none;
-    /* Define uma cor base discreta (ex: azul marinho) */
     color: #0056b3; 
-    /* Adiciona uma transição básica */
     transition: color 0.2s;
 }
 
@@ -103,4 +100,5 @@ footer address a {
 footer address a:hover,
 footer address a:focus {
     color: #ff6f61;
+
 }
