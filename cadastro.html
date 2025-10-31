@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Salve um DOG | Seja Voluntário ou Apoiador</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <meta name="description" content="Faça seu cadastro para se tornar um voluntário ou doador da ONG Salve um DOG e nos ajude a transformar vidas de cães.">
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/logo-salveumdog.png" alt="Logo da ONG Salve um DOG" width="150">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Nossos Resgates</a></li>
+                <li><a href="cadastro.html">Quero Ajudar! (Cadastro)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Seja um Herói: Cadastre-se para Fazer a Diferença!</h1>
+
+        <section>
+            <h2>Seu Cadastro Salva Vidas</h2>
+            
+            <form action="/processar-cadastro" method="POST">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required title="O CPF deve estar no formato 000.000.000-00">
+                    </div>
+                    
+                    <div>
+                        <label for="telefone">Telefone (WhatsApp):</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" required title="O telefone deve estar no formato (99) 99999-9999">
+                    </div>
+                    
+                    <div>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações de Endereço</legend>
+                    
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required title="O CEP deve estar no formato 00000-000">
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço (Rua/Avenida, Número):</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua Exemplo, 123" required>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected>Selecione seu Estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Como você deseja contribuir?</legend>
+                    <input type="radio" id="voluntario" name="contribuicao" value="voluntario" required>
+                    <label for="voluntario">Quero ser Voluntário Ativo</label><br>
+                    <input type="radio" id="doador" name="contribuicao" value="doador">
+                    <label for="doador">Quero ser Apoiador/Doador Fixo</label>
+                </fieldset>
+
+                <button type="submit">Enviar Cadastro e Juntar-se a Nós</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Salve um DOG</p>
+    </footer>
+
+</body>
+</html>
